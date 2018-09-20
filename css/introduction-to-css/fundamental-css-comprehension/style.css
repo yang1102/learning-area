@@ -1,4 +1,4 @@
-/* General styles - put these straight into your stylesheet */
+/* General styles setup */
 
 body {
   margin: 0;
@@ -10,7 +10,7 @@ html {
   background-color: #ccc;
 }
 
-/* card css */
+/* card css setup*/
 .card {
   width: 35em;
   height: 22em;
@@ -18,6 +18,15 @@ html {
   background-color: red;
   border: 0.2em solid black;
   border-radius: 1.5em;
+}
+.card p, h2 {
+  margin: 0;
+}
+
+/* header footer setup */
+.card header, .card footer {
+  height: 3em;
+  padding: 1em;
 }
 
 .card header {
@@ -30,9 +39,20 @@ html {
   border-radius: 0 0 1.5em 1.5em;
 }
 
-.card header, .card footer {
-  height: 3em;
-  padding: 1em;
+.card header h2 {
+  font-size: 2em;
+  line-height: 1.5; /* 1.5em since line-height em is based on current font-size*/
+}
+
+.card footer p {
+  font-size: 1.5em;
+  line-height: 2;
+}
+
+/* card article/content setup */
+.card article {
+  height: 12em;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .card article img {
@@ -40,26 +60,7 @@ html {
   float: right;
 }
 
-.card article {
-  height: 12em;
-  background-color: rgba(0,0,0,0.4);
-}
-
-p, h2 {
-  margin: 0;
-}
-
-card h2 {
-  font-size: 2em;
-  line-height: 1.5; /* 1.5em since line-height em is based on current font-size*/
-}
-
-footer p {
-  font-size: 1.5em;
-  line-height: 2;
-}
-
-article p {
+.card article p {
   color:white;
   padding: 1em;
 }
